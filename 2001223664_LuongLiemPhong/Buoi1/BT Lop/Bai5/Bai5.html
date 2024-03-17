@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai5</title>
+    <style>
+        .khung{
+        font-family: arial, sans-serif;
+        width: 650px;
+        margin: 0 auto;
+        border: 2px solid gray; 
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        .image-parent{
+            text-align: center;
+        }
+        .imagelist{
+            text-align: center;
+            .list-image {
+                width: 75px;
+                height: 75px;
+                margin-top: 0px;
+                border: solid 2px rgb(214, 214, 214); 
+            }
+                .selected {
+                    border: 5px solid red; /* Điều chỉnh màu sắc và độ dày theo ý muốn */
+                }  
+        }
+        .info{
+            margin: 10px 10px;
+            .ten{
+                font-size: 30px;
+                font-weight: bold;
+                margin:auto;
+            }
+            .list{
+                font-size: 20px;
+                line-height: 40px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    </style>
+</head>
+<body >
+    <div class="khung">
+        <div class="image-parent">
+            <img src="img/OIP0.jpg"
+            alt="Máy giặt Electrolux Inverter 8 kg EWF8024BDWA">
+        </div>
+        <div class="imagelist">
+            <img src="img/OIP0.jpg" class="list-image selected">
+            <img src="img/OIP1.jpg"class="list-image ">
+            <img src="img/OIP2.jpg"class="list-image">
+            <img src="img/OIP3.jpg"class="list-image">
+            <img src="img/OIP4.jpg"class="list-image">
+        </div>
+        <div class="info">
+            <p class="ten">Đặc điểm nổi bật</p>
+            <div class="list"> 
+                <ul type="dot">
+                    <li> Công nghệ Inverter vận hành êm, bền và tiết kiệm điện.</li>
+                    <li> <a style="color: red; font-weight: bold; text-decoration:  underline dashed;">Công nghệ Ultra Mix</a> giúp giữ quần áo bền màu như mới.</li>
+                    <li> Công nghệ Vapour Care diệt vi khuẩn và tác nhân gây dị ứng.</li>
+                    <li> Chương trình giặt Vapour Refresh làm mới, giảm nhăn quần áo.</li>
+                    <li> Công nghệ AutoSense giảm sờn rách, hao mòn, bảo vệ quần áo.</li>
+                    <li> Máy giặt có chương trình giặt an toàn cho trang phục len.</li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>

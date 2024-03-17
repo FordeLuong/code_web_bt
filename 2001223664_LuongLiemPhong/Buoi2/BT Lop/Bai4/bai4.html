@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table_parent   {
+            margin:0 10%;
+            border: 3;
+            border-collapse:collapse;  
+            width: 1400px;
+            
+        }
+        
+        .table_child1{
+            border: 1px solid black;
+            .tr,td{
+                border:1px solid rgb(199, 185, 185);
+                text-align: center;
+                padding: 10px;
+
+            }
+            border-collapse:collapse;  
+        }
+        .table_child2{
+            .tr,td{
+                border:2px solid rgb(164, 13, 13);
+                text-align: left;
+
+            }
+            border-collapse:collapse;  
+        }
+        .table_child3{
+            .tr,td{
+                border-bottom: 1px solid rgb(225, 225, 225);
+                margin: 15px;
+                height:40px;
+                padding-left: 10px;
+            }
+            .td{
+                margin: 10px 10px;
+                padding: 10px 10px;
+                border: 1px solid black;
+                line-height: 30px;
+            }
+        }
+        .tieude{
+            background-color: gray;
+            background-color: rgb(225, 225, 225);
+            text-align: left;
+            height:40px;
+            border-top: 1px solid rgb(225, 225, 225);
+            padding-left: 10px;
+        }
+        .title{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            font-size: 20px;
+            font-weight: bolder;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table class="table_parent">
+        <!-- Row1 -->
+        <tr>
+            <td colspan="2" class="title">MAY LANH MDV 1.5 HP VSIC-12CFX
+                <hr color="yellow" size="5px" noshade="noshade" width="600px" align="left"/>
+            </td>
+        </tr>
+        <!-- Row2 -->
+        <tr>
+            <td>
+                <img src="img/maylanh1.jpg" style="width: 500px; margin-right:200px;" >
+            </td>
+            <td align="left">
+                <table class="table_child1">
+                    <div style="font-weight: bolder; margin-bottom: 10px;" >TÍNH NĂNG NỔI BẬT</div>
+                    <tr>
+                        <td>Công suất Làm lạnh (BTU)</td>
+                        <td>Thể tích phòng sử dụng</td>
+                        <td>Loại gas</td>
+                        <td>Sản xuất tại</td>
+                    </tr>
+                    <tr>
+                        <td>12.000 BTU</td>
+                        <td>Dưới 60 m³</td>
+                        <td>R-32</td>
+                        <td>Việt Nam</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- Row3 -->
+        <tr style="padding-right:30px">
+            <!-- Cot1 -->
+            <td>
+                <table class="table_child2">
+                    <tr>
+                        <td style="padding-block-end:10px">
+                            <div style="padding-left:10px;background-color: red; width:50%;font-size: 20px ; font-weight: bolder; color:aliceblue">
+                                <span> 
+                                    <img src="img/Qua.png" width="35px">
+                                </span>
+                                Quà tặng trị giá <span style="color:yellow;">7.000.000</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul type="disc" style="color:orangered">
+                                <li ><span style="color: black">Đổi Trả Trong 35 Ngày Nếu Lỗi Kỹ Thuật</span></li>
+                                <li ><span style="color: black">Tăng Phiếu Mua Hang 7.000.000₫ Mua Kèm Lọc Nước, Bếp Điện Âm Và Nổi (xem chi tiết)</span></li>
+                                <li ><span style="color: black">Tăng Combo Dịch Vụ & Phiều Mua Hàng 700.000₫ (800140)</span></li>
+                                <li ><span style="color: black">Giảm 500.000 Khi Thanh Toàn Bằng Thể Tin Dụng FE Credit ( Đơn hàng trên 5 triệu)</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <p style="color: blue;"><span style="color:green; font-weight: bolder;">CÒN HÀNG</span> ( Xem siêu thị còn hàng)</p>
+                <p> 
+                    <img src="img/call.png"width="30px">
+                    Gọi <span style="color: red; font-weight: bolder;">028-3856 3388</span>  để được tư vấn và mua hàng miễn phí
+                </p>
+                <ul>
+                    <li>Xem thêm chính sách bảo hành và đổi trả sản phẩm</li>
+                    <li>Hệ thống trung tâm bảo hành <span style="color:blue">(Xem chi tiết)</span></li>
+                    <li>Đổi trả sản phẩm trong vòng 35 ngày <span style="color:blue">( Nếu do lỗi kỹ thuật)</span>.</li>
+                    <li>Miễn phí vận chuyển toàn quốc <span style="color:blue">( Xem chi tiết)</span></li>
+                </ul>
+                <div style="border: 1px solid rgb(249, 240, 240); width: 600px; background-color: aliceblue;">
+                    <p style="font-size: 20px; font-weight: bolder; margin: 10px 10px;">Làm lạnh nhanh, cảm biến hướng gió</p>
+                    <p style="margin: 10px 10px 10px 10px; font-size: 15px;">Chức năng làm lạnh nhanh chỉ với một nút nhấn bạn có thể tận hưởng cảm giác mát lạnh nhanh chóng. Máy lạnh sẽ hoạt động với công suất cao nhất sẽ tạo ra những làn gió mát lạnh liên tục, giảm nhiệt độ phòng xuống 170C</p>
+                </div>
+            </td>
+            <td>
+                <table class="table_child3">
+                    <th colspan="2" class="tieude">
+                            Thông tin chung
+                    </th>
+                    <tr>
+                        <td>Công suất Làm lạnh (BTU)</td>
+                        <td>12.000 BTU</td>
+                    </tr>
+                    <tr>
+                        <td>Công suất lạnh (HP)</td>
+                        <td>1.5 Hp</td>
+                    </tr>
+                    <tr>
+                        <td>Inverter-Tiết kiệm điện</td>
+                        <td>Không</td>
+                    </tr>
+                    <tr>
+                        <td>Thể tích phòng sử dụng</td>
+                        <td>Dưới 60 m³</td>
+                    </tr>
+                    <th>
+                    <tr >
+                        <td colspan="2" class="tieude">Tính năng sản phẩm</td>
+                    </tr>
+                    <tr>
+                        <td>Hướng không khi</td>
+                        <td>Lên Xuống: Có</td>
+                    </tr>
+                    <tr>
+                        <td>Độ lọc khử mùi</td>
+                        <td>Màng lọc kháng khuẩn, Loại bỏ mùi khó chịu</td>
+                    </tr>
+                    <tr>
+                        <td>Nguồn điện</td>
+                        <td>220V/50Hz/1.5A</td>
+                    </tr>
+                    <tr>
+                        <td>Tiện ích</td>
+                        <td>Cảnh báo rò rỉ gas, Follow me - Điều chỉnh hướng gió tự động</td>
+                    </tr>
+                    <tr>
+                        <td>Làm lạnh nhanh</td>
+                        <td>Có</td>
+                    </tr>
+                    <th  colspan="2" class="tieude">
+                        Remote điều khiển
+                    </th>
+                    <tr>
+                        <td>Bật/tắt màn hình hiển thị</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Bạt rất tiếng bịp</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Chế độ quạt</td>
+                        <td>Tự động hoặc chính tay</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai6</title>
+    <style>
+        .khung-parent{
+            font-family: arial, sans-serif;
+            margin: 0 auto;
+            border: 1px solid black;
+            width: 450px;
+            height: auto;
+            background-color: red;
+            color: white;
+        }
+        .khung-child{
+            border: 1px solid black;
+            width: fit-content;
+            height: fit-content;
+            background-color: white;
+            margin:10px 10px;
+            color:black
+            
+        }
+        .tieu-de{
+            color:red;
+            font-weight: bolder ;
+            font-size: 20px; 
+            margin: 5px 5px;
+        }
+        .Content-1{
+            margin: 10px;
+            .c1-1{
+                font-size: 30px;
+                font-weight: bolder;
+                margin:0px 0px;
+            }
+            .c1-2{
+                font-size: 40px;
+                font-weight: bolder;
+                margin:5px 0px
+            }
+        }
+        .Content-2{
+            padding-left: 10px;
+        }
+        .NUT1{
+            background-color: red;
+            color : white;
+            font-size: 12px;
+            border-radius: 5px;
+            font-weight: bolder;
+        }
+        .NUT2{
+            border-radius: 5px;
+            background-color: rgb(81, 149, 98);
+            font-weight: bolder;
+            color:white;
+            font-size: 12px;
+
+        }
+        .NUT3{
+            border: 1px solid red;
+            border-radius: 5px;
+            color: red;
+            font-weight: bolder;
+            font-size: 12px;
+
+        }
+    </style>    
+</head>
+<body>
+    <div class="khung-parent">
+        <div class="Content-1">
+            <p class="c1-1">CÁC CÁCH</p> 
+            <p class="c1-2">MUA HÀNG ONLINE</p>
+        </div>
+        <div class="khung-child">
+            <div class="content-2">
+                <p class="tieu-de">Website: nguyenkim.com</p>
+                <p style="padding-left: 10px;"><span style="Color: red;font-weight: bolder;">Bước 1:</span> Bạn tìm sản phẩm cần mua tại "<b>Danh mục sản phẩm</b>" hoặc nhập vào "<b>Khung tìm kiếm</b>".</p>
+                <img style="width: 300px; margin-top: 0px; padding-left: 10px;" src="img/Picture1.jpg" >
+                <p style="Color: red;font-weight: bolder;padding-left: 10px;">Bước 2:</p>
+                <p style="padding-left: 10px;"><b> Đối với </b></b> <button class="NUT1">MUA NGAY</button>
+                    <ul>
+                        <li>Chọn <b>"Mua ngay"</b>
+                            <li>Chọn số lượng sản phẩm cần mua</li>
+                            <li>Nhập mã khuyến mãi (nếu có)</li>
+                            <li>Chọn hình thức nhận hàng tại nhà hoặc trung tâm</li>
+                            <li>Nhập thông tin của bạn</li>
+                            <li>Chọn phương thức thanh toán sản phẩm mong muốn</li>
+                            <li>Chọn <button class="NUT2">THANH TOÁN</button></li>
+                    </ul>
+                </p>
+                <p style="padding-left: 10px;"><b> Đối với </b></b> <button class="NUT3">MUA TRẢ GÓP</button>
+                <ul>
+                    <li>Chọn "Mua trả góp"</li>
+                    <li>Chọn phương thức trả góp phù hợp:</li>
+                    <button class="NUT1">QUA CÔNG TY TÀI CHÍNH</button>
+                    <li>Chọn số tháng trả góp 
+                        <button class="NUT1">6 THÁNG</button>
+                        <button class="NUT1">3 THÁNG</button>
+                        <button class="NUT1">12 THÁNG</button>
+                        <button class="NUT1">15 THÁNG</button>
+                        <button class="NUT1">18 THÁNG</button>
+                    </li>
+                    <li>Chọn số tiền muốn trả trước</li>
+                        <li>Chọn công ty tài chính phù hợp. Điền đầy đủ thông tin</li>
+                        <li>Chọn <button class ="NUT2">THANH TOÁN</button></li>
+                        <button class="NUT1">QUA THẺ TÍN DỤNG</button>
+                        <li>Chọn ngân hàng phát hành thẻ tín dụng</li>
+                        <li>Điền đầy đủ thông tin thẻ</li>
+                        <li>Chọn <button class ="NUT2">TIẾP THEO</button></li>
+                </ul>
+
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

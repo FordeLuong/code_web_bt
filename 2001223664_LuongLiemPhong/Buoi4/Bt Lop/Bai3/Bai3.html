@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            width: 60%;
+        }
+
+        table {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        label {
+            margin: -8px 0 0 10px;
+            position: absolute;
+            background-color: white;
+            padding: 0 5px;
+            color: grey;
+            font-size: smaller;
+        }
+
+        .bang1 {
+            border: 1px solid red;
+            color: red;
+            font-weight: bolder;
+            width: 50%;
+            border-radius: 3px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+
+        .bang2 {
+            background-color: lightgray;
+            border: 1px solid black;
+            font-weight: bolder;
+            width: 50%;
+            border-radius: 3px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+        .bang11{
+            border: 1px solid red;
+            color: red;
+            font-weight: bolder;
+            width: 33%;
+            border-radius: 3px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+        .bang3 {
+            border: 1px solid black;
+            font-weight: bolder;
+            width: 33%;
+            border-radius: 3px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+
+        img {
+            height: 30px;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <table class="table1" cellspacing="20">
+            <th colspan="2" style="text-align: left;"><h3>Chọn địa chỉ nhận hàng</h3></th>
+            <tr>
+                <td class="bang1">
+                    <img src="img/truckicon.png" alt="">
+                    NHẬN HÀNG TẠI NHÀ
+                    <input type="radio" name="NH" id="taiNha" checked style="accent-color: red;padding: 0 10px">
+                </td>
+                <td class="bang2">
+                    <img src="img/house.png" alt="">
+                    NHẬN HÀNG TẠI TRUNG TÂM
+                    <input type="radio" name="NH" id="taiTT" ;padding: 0 10px">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="position: relative;width: 100%;height: 40px;">
+                        <label>Họ và tên
+                            <span style="color: red;">(*)</span>
+                        </label>
+                        <input type="text" style="width: 100%;height: 40px; box-sizing: border-box;">
+                    </div>
+                </td>
+                <td>
+                    <div style="position: relative;width: 100%;height: 40px;">
+                        <label>Số điện thoại
+                            <span style="color: red;">(*)</span>
+                        </label>
+                        <input type="text" style="width: 100%;height: 40px; box-sizing: border-box;">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="position: relative;width: 100%;height: 40px;">
+                        <label>Email
+                        </label>
+                        <input type="text" style="width: 100%;height: 40px; box-sizing: border-box;">
+                    </div>
+                </td>
+                <td>
+                    <div style="position: relative;width: 100%;height: 40px;">
+                        <label>Tỉnh/Thành phố
+                            <span style="color: red;">(*)</span>
+                        </label>
+                        <select style="width: 100%; height: 40px; box-sizing: border-box;">
+                            <option value="" selected hidden>Chọn tỉnh / thành phố</option>
+                            <option value="1">TP.HCM nội thành</option>
+                            <option value="2">Hà Nội</option>
+                            <option value="3">Huế</option>
+                            <option value="4">Đà Nẵng</option>
+                            <option value="5">Quảng Ninh</option>
+                            <option value="6">Cần Thơ</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="position: relative;width: 100%;height: 40px;">
+                        <label> Quận / Huyện
+                            <span style="color: red;">(*)</span>
+                        </label>
+                        <select style="width: 100%; height: 40px; box-sizing: border-box">
+                            <option value="" selected hidden>Chọn quận / huyện</option>
+                            <option value="1">Quận 1</option>
+                            <option value="2">Quận 2</option>
+                            <option value="3">Quận 3</option>
+                            <option value="4">Quận Tân Phú</option>
+                            <option value="5">Quận Tân Bình</option>
+                            <option value="6">Quận Thủ Đức</option>
+                        </select>
+                    </div>
+                </td>
+                <td>
+                    <div style="position: relative;width: 100%;height: 40px;">
+                        <label> Phường / Xã
+                            <span style="color: red;">(*)</span>
+                        </label>
+                        <select style="width: 100%; height: 40px; box-sizing: border-box">
+                            <option value="" selected hidden>Chọn phường / xã</option>
+                            <option value="1">Phường 1</option>
+                            <option value="2">Phường 2</option>
+                            <option value="3">Phường 3</option>
+                            <option value="4">Phường 10</option>
+                            <option value="5">Phường 12</option>
+                            <option value="6">Phường 14</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div style="position: relative;width: 100%;height: 40px;">
+                        <label> Số nhà / Tên đường
+                            <span style="color: red;">(*)</span>
+                        </label>
+                        <input type="text" style="width: 100%;height: 40px; box-sizing: border-box;">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" style="accent-color:red"> Sử dụng thông tin này để đăng kí tài khoản mua hàng
+                    !
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div style="position: relative;width: 100%;height: 40px;">
+                        <label> Để lại lời nhắn cho Nguyễn Kim </label>
+                        <input type="text" style="width: 100%;height: 100px; box-sizing: border-box;">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form style="margin: 30px auto; font-family: Arial, Helvetica, sans-serif;">
+        <table cellspacing="20px">
+            <th colspan="2" style="text-align: left;">
+                <h3>Chọn hình thức thanh toán</h3>
+            </th>
+            <tr>
+                <td class="bang11">
+                    <img src="img/cash.png" alt="">
+                    Thanh toán khi nhận hàng
+                    <input type="radio" name="tt" checked style="accent-color: red;padding: 0 10px">
+                </td>
+                <td class="bang3">
+                    <img src="img/bank.png" alt="">
+                    Thẻ ATM/Internet Banking
+                    <input type="radio" name="tt" style="accent-color: red;padding: 0 10px">
+                </td>
+                <td class="bang3">
+                    <img src="img/credit.png" alt="">
+                    Thẻ tín dụng
+                    <input type="radio" name="tt" style="accent-color: red;padding: 0 10px">
+                </td>
+            </tr>
+            <tr >
+                <td colspan="3" style="border-radius: 3px; border:1px solid lightgray; width: 100%;height:40px"><input type="checkbox" style="margin: 0 20px;"><label style="color: black; margin: 0px">Bạn muốn sử dụng dịch vụ lắp đặt</label></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="border-radius: 3px; border:2px solid red; width: 100%;height:40px"><input type="checkbox" checked style="margin: 0 20px;accent-color: red;"><label style="color: black; margin: 0px" >Tôi đồng ý <a href="" style="color:red">thỏa thuận bảo mật và chính sách mua hàng</a></label></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="border-radius: 3px; border:1px solid lightgray; width: 100%;height:40px"><input type="checkbox" style="margin: 0 20px;"><label style="color: black; margin: 0px">Yêu cầu xuất hóa đơn GTGT cho đơn hàng này</label></td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="submit" value="THANH TOÁN >" style="height: 40px; width: 100%;background-color: red;color: white;border: 1px solid red;border-radius: 3px;font-weight: bold;font-size: large;"></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+
+</html>
