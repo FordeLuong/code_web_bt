@@ -1,0 +1,41 @@
+#Border1 {
+    border: #00F solid 2px;
+    width: 700px;
+    margin: 20px auto;
+    background-color: #FFC;
+    border-radius: 10px;
+}
+
+#Border2 {
+    border: #00F solid 2px;
+    width: 450px;
+    height: 330px;
+    margin: 20px auto;
+    background-image: url(img/mom.jpg);
+    border-radius: 10px;
+}
+
+#Border1 h2 {
+    color: #900
+}
+
+#Border1 p {
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+    text-indent: 50px;
+
+}
+
+#Border2 h2 {
+    color: #cf0
+}
+
+#Border2 p {
+    font-size: 20px;
+    color: #FFC;
+    line-height: 30px;
+    padding: 20px;
+    text-align: justify;
+    text-indent: 50px
+}
