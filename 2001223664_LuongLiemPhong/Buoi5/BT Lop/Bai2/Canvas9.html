@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Image to use:</p>
+    <img id="scream" src="img/anh.jpg" width="200" height="240"></img>
+    <p>Canvas to fill:</p>
+    <canvas id="myCanvas" width="250" height="300" style="border: 2px solid black;">
+        Your Browser does not support the HTML Canvas tag.
+    </canvas>
+    <p>
+        <button onclick="myCanvas()"> Canvas picture</button>
+    </p>
+    <script>
+        function myCanvas() {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            var img = document.getElementById("scream");
+            ctx.drawImage(img, 10, 10);
+        }
+    </script>
+</body>
+
+</html>
